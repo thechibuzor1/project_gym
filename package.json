@@ -6,7 +6,9 @@
   "version": "1.0.0",
   "description": "ecommerce webapp",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  },
   "scripts": {
     "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",
     "start": "node backend/server.js",
