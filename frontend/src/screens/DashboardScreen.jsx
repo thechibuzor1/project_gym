@@ -53,7 +53,7 @@ export default function DashboardScreen() {
 
   return (
     <div>
-      <h1  style={{ color: "green" }}>Dashboard</h1>
+      <h1  style={{ color: "red" }}>Dashboard</h1>
       {loading ? (
         <LoadingBox />
       ) : error ? (
@@ -117,7 +117,7 @@ export default function DashboardScreen() {
             )}
           </div>
           <div className="my-3">
-            <h2  style={{ color: "green" }}>Categories</h2>
+            <h2  style={{ color: "white" }}>Categories</h2>
             {summary.productCategories.length === 0 ? (
               <MessageBox>No Category</MessageBox>
             ) : (

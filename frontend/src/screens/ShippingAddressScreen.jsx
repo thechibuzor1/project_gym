@@ -64,14 +64,14 @@ export default function ShippingAddressScreen() {
       </Helmet>
       <CheckoutSteps step1 step2></CheckoutSteps>
       <div className="container small-container">
-        <h1 style={{ color: "green" }} className="my-3">
+        <h1 style={{ color: "red"  }} className="my-3">
           Shipping 
         </h1>
         <Form onSubmit={submitHandler}>
           <Form.Group
             className="mb-3"
             controlId="fullname"
-            style={{ color: "green" }}
+            style={{ color: "red"  }}
           >
             <Form.Label>Full Name</Form.Label>
             <Form.Control
@@ -81,7 +81,7 @@ export default function ShippingAddressScreen() {
             />
           </Form.Group>
           <Form.Group
-            style={{ color: "green" }}
+            style={{ color: "red"  }}
             className="mb-3"
             controlId="address"
           >
@@ -99,7 +99,7 @@ export default function ShippingAddressScreen() {
             />
           </Form.Group>
           <Form.Group
-            style={{ color: "green" }}
+            style={{ color: "red"  }}
             className="mb-3"
             controlId="city"
           >
@@ -111,7 +111,7 @@ export default function ShippingAddressScreen() {
             />
           </Form.Group>
           <Form.Group
-            style={{ color: "green" }}
+            style={{ color: "red"  }}
             className="mb-3"
             controlId="country"
           >
@@ -124,7 +124,7 @@ export default function ShippingAddressScreen() {
           </Form.Group>
 
           <div className="mb-3">
-            <Button style={{ background: "green" }} variant="primary" type="submit">
+            <Button style={{ background: "red" }} variant="primary" type="submit">
               Continue
             </Button>
           </div>

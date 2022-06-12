@@ -139,7 +139,7 @@ export default function ProductListScreen() {
     <div>
       <Row>
         <Col>
-          <h1 style={{ color: "green" }}>Products</h1>
+          <h1 style={{ color: "red" }}>Products</h1>
         </Col>
         <Col className="col text-end">
           <div>
@@ -203,7 +203,7 @@ export default function ProductListScreen() {
           <div>
             {[...Array(pages).keys()].map((x) => (
               <Link
-                style={{ color: "green" }}
+                style={{ color: "red" }}
                 className={x + 1 === Number(page) ? "btn text-bold" : "btn"}
                 key={x + 1}
                 to={`/admin/products?page=${x + 1}`}

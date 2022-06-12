@@ -92,7 +92,7 @@ export default function OrderListScreen() {
       <Helmet>
         <title>Orders</title>
       </Helmet>
-      <h1 style={{ color: "green" }}>Orders</h1>
+      <h1 style={{ color: "red" }}>Orders</h1>
       {loadingDelete && <LoadingBox></LoadingBox>}
       {loading ? (
         <LoadingBox></LoadingBox>

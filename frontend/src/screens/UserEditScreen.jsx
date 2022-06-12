@@ -94,7 +94,7 @@ export default function UserEditScreen() {
       <Helmet>
         <title>Edit User ${userId}</title>
       </Helmet>
-      <h1 style={{ color: "green" }}>Edit User {userId}</h1>
+      <h1 style={{ color: "red" }}>Edit User {userId}</h1>
 
       {loading ? (
         <LoadingBox></LoadingBox>
@@ -130,7 +130,7 @@ export default function UserEditScreen() {
           />
 
           <div className="mb-3">
-            <Button  style={{ background: "green" }}disabled={loadingUpdate} type="submit">
+            <Button  style={{ background: "red" }}disabled={loadingUpdate} type="submit">
               Update
             </Button>
             {loadingUpdate && <LoadingBox></LoadingBox>}

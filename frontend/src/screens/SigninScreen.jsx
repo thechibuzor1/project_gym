@@ -54,20 +54,20 @@ export default function SigninScreen(){
             <Helmet>
                 <title>Sign In</title>
             </Helmet>
-            <h1 style= {{color: 'green'}} className="my-3">Sign In </h1>
+            <h1 style= {{color: 'red'}} className="my-3">Sign In </h1>
             <Form onSubmit={submitHandler}>
                 <Form.Group className="mb-3" controlId='email'>
-                    <Form.Label style= {{color: 'green'}}>Email</Form.Label>
+                    <Form.Label style= {{color: "red" }}>Email</Form.Label>
                     <Form.Control type='email' required onChange={(e) => setEmail(e.target.value)}/>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId='password'>
-                    <Form.Label style= {{color: 'green'}}>Password</Form.Label>
+                    <Form.Label style= {{color: "red" }}>Password</Form.Label>
                     <Form.Control type='password' required onChange={(e) => setPassword(e.target.value)}/>
                 </Form.Group>
                 <div className='mb-3'>
-                    <Button  style={{ background: "green" }} type='submit'>Sign In</Button>
+                    <Button  style={{ background: "red" }} type='submit'>Sign In</Button>
                 </div>
-                <div style= {{color: 'green'}} className='mb-3'>
+                <div style= {{color: 'red'}} className='mb-3'>
                     New customer?{' '}
                     <Link to={`/signup?redirect=${redirect}`}>Create an account</Link>
                 </div>

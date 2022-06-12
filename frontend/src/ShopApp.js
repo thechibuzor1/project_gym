@@ -33,7 +33,7 @@ function ShopApp() {
         <Navbar>
           <Container className="ct">
             <LinkContainer to="#">
-              <Navbar.Brand>SHOP EVAACTIVELIFE</Navbar.Brand>
+              <Navbar.Brand>SHOP METAL VILLAGE</Navbar.Brand>
             </LinkContainer>
             <Nav className="me-auto">
               <Link to="/cart" className="nav-link">

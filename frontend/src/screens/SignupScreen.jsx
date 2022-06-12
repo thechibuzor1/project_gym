@@ -60,16 +60,16 @@ export default function SignupScreen() {
       <Helmet>
         <title>Sign Up</title>
       </Helmet>
-      <h1 style={{ color: "green" }} className="my-3">
+      <h1 style={{ color: "red"  }} className="my-3">
         Sign Up{" "}
       </h1>
       <Form onSubmit={submitHandler}>
         <Form.Group className="mb-3" controlId="name">
-          <Form.Label style={{ color: "green" }}>Name</Form.Label>
+          <Form.Label style={{ color: "red"  }}>Name</Form.Label>
           <Form.Control onChange={(e) => setName(e.target.value)} required />
         </Form.Group>
         <Form.Group className="mb-3" controlId="email">
-          <Form.Label style={{ color: "green" }}>Email</Form.Label>
+          <Form.Label style={{ color: "red"  }}>Email</Form.Label>
           <Form.Control
             type="email"
             required
@@ -77,14 +77,14 @@ export default function SignupScreen() {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="password">
-          <Form.Label style={{ color: "green" }}>Password</Form.Label>
+          <Form.Label style={{ color: "red"  }}>Password</Form.Label>
           <Form.Control
             type="password"
             required
             onChange={(e) => setPassword(e.target.value)}
           />
           <Form.Group className="mb-3" controlId="confirmPassword">
-            <Form.Label style={{ color: "green" }}>Confirm Password</Form.Label>
+            <Form.Label style={{ color: "red" }}>Confirm Password</Form.Label>
             <Form.Control
               type="password"
               onChange={(e) => setconfirmPassword(e.target.value)}
@@ -93,9 +93,9 @@ export default function SignupScreen() {
           </Form.Group>
         </Form.Group>
         <div className="mb-3">
-          <Button  style={{ background: "green" }} type="submit">Sign Up</Button>
+          <Button  style={{ background: "red" }} type="submit">Sign Up</Button>
         </div>
-        <div style={{ color: "green" }} className="mb-3">
+        <div style={{ color: "red" }} className="mb-3">
           Already have an account?{" "}
           <Link to={`/signin?redirect=${redirect}`}>Sign-In</Link>
         </div>

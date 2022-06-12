@@ -37,12 +37,12 @@ export default function PaymentMethodScreen() {
         <Helmet>
           <title>Payment Method</title>
         </Helmet>
-        <h1 style={{ color: "green" }} className="my-3">
+        <h1 style={{ color: "red"  }} className="my-3">
           Payment Method
         </h1>
         <Form onSubmit={submitHandler}>
            
-            <div style={{ color: "green" }} className="mb-3">
+            <div style={{ color: "red"  }} className="mb-3">
               <Form.Check
                 type="radio"
                 id="PayStack"
@@ -53,7 +53,7 @@ export default function PaymentMethodScreen() {
               />
             </div>
             <div className="mb-3">
-            <Button style={{ background: "green" }} type="submit">Continue</Button>
+            <Button style={{ background: "red" }} type="submit">Continue</Button>
             </div>
           </Form>
       </div>

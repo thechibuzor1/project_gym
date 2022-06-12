@@ -95,7 +95,7 @@ export default function UserListScreen() {
       <Helmet>
         <title>Users</title>
       </Helmet>
-      <h1 style={{ color: "green" }}>Users</h1>
+      <h1 style={{ color: "red" }}>Users</h1>
       {loadingDelete && <LoadingBox></LoadingBox>}
       {loading ? (
         <LoadingBox></LoadingBox>

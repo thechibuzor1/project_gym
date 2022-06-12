@@ -87,14 +87,14 @@ export default function PlaceOrderScreen() {
       <Helmet>
         <title>Preview Order</title>
       </Helmet>
-      <h1 style={{ color: "green" }} className="my-3">
+      <h1 style={{ color: "red" }} className="my-3">
         Preview Order
       </h1>
       <Row>
         <Col md={8}>
           <Card className="mb-3">
             <Card.Body>
-              <Card.Title style={{ color: "green" }}>Shipping</Card.Title>
+              <Card.Title style={{ color: "red" }}>Shipping</Card.Title>
               <Card.Text>
                 <strong>Name:</strong> {cart.shippingAddress.fullName} <br />
                 <strong>Address:</strong> {cart.shippingAddress.address},
@@ -106,7 +106,7 @@ export default function PlaceOrderScreen() {
           </Card>
           <Card  className="mb-3">
             <Card.Body>
-              <Card.Title style={{ color: "green" }}>Payment</Card.Title>
+              <Card.Title style={{ color: "red" }}>Payment</Card.Title>
               <Card.Text>
                 <strong>Method:</strong> {cart.paymentMethod}
               </Card.Text>
@@ -115,7 +115,7 @@ export default function PlaceOrderScreen() {
           </Card>
           <Card className="mb-3">
             <Card.Body>
-              <Card.Title style={{ color: "green" }}>Items</Card.Title>
+              <Card.Title style={{ color: "red"  }}>Items</Card.Title>
               <ListGroup variant="flush">
                 {cart.cartItems.map((item) => (
                   <ListGroup.Item key={item._id}>
@@ -176,7 +176,7 @@ export default function PlaceOrderScreen() {
                 <ListGroup.Item>
                   <div className="d-grid">
                     <Button
-                      style={{ background: "green" }}
+                      style={{ background: "red" }}
                       type="button"
                       onClick={placeOrderHandler}
                       disabled={cart.cartItems.length === 0}

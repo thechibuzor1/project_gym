@@ -213,7 +213,7 @@ export default function OrderScreen() {
       <Helmet>
         <title>Order {orderId}</title>
       </Helmet>
-      <h1 style={{ color: "green" }} className="my-3">
+      <h1 style={{ color: "red"  }} className="my-3">
         Order {orderId}
       </h1>
       <Row>

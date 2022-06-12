@@ -49,12 +49,11 @@ export default function ProfileScreen() {
         }
       );
       dispatch({
-          type: 'UPDATE_SUCCESS',
+        type: "UPDATE_SUCCESS",
       });
-      ctxDispatch({ type: 'USER_SIGNIN', payload: data });
-      localStorage.setItem('userInfo', JSON.stringify(data));
-      toast.success('Profile update sucessfull');
-
+      ctxDispatch({ type: "USER_SIGNIN", payload: data });
+      localStorage.setItem("userInfo", JSON.stringify(data));
+      toast.success("Profile update sucessfull");
     } catch (err) {
       dispatch({
         type: "FETCH_FAIL",
@@ -63,30 +62,29 @@ export default function ProfileScreen() {
     }
   };
 
-let navigate = useNavigate();
+  let navigate = useNavigate();
   const signoutHandler = () => {
     ctxDispatch({ type: "USER_SIGNOUT" });
     localStorage.removeItem("userInfo");
     localStorage.removeItem("shippingAddress");
     localStorage.removeItem("paymentMethod");
-    navigate('/');
+    navigate("/");
   };
-
 
   return (
     <div className="container small-container">
       <Helmet>
         <title>User profile</title>
       </Helmet>
-      <h1 style={{ color: "green" }} className="my-3">
+      <h1 style={{ color: "red" }} className="my-3">
         User Profile
       </h1>
-      <p style={{ color: "green" }} className="my-3">
+      <p style={{ color: "red" }} className="my-3">
         Update your info
       </p>
       <form onSubmit={submitHandler}>
         <Form.Group className="mb-3" controlId="name">
-          <Form.Label style={{ color: "green" }}>Name</Form.Label>
+          <Form.Label style={{ color: "red" }}>Name</Form.Label>
           <Form.Control
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -94,7 +92,7 @@ let navigate = useNavigate();
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="email">
-          <Form.Label style={{ color: "green" }}>Email</Form.Label>
+          <Form.Label style={{ color: "red" }}>Email</Form.Label>
           <Form.Control
             type="email"
             value={email}
@@ -103,31 +101,29 @@ let navigate = useNavigate();
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="password">
-          <Form.Label style={{ color: "green" }}>Password</Form.Label>
+          <Form.Label style={{ color: "red" }}>Password</Form.Label>
           <Form.Control
             type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="password">
-          <Form.Label style={{ color: "green" }}>Confirm Password</Form.Label>
+          <Form.Label style={{ color: "red" }}>Confirm Password</Form.Label>
           <Form.Control
             type="password"
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
         </Form.Group>
         <div className="mb-3">
-          <Button  style={{ background: "green" }} type="submit">Update</Button>
+          <Button style={{ color: "red" }} type="submit">
+            Update
+          </Button>
         </div>
-        <div style= {{color: 'green'}} className='mb-3'>
-      
-        <Link style= {{color: 'green'}}
-                    to="#signout"
-                    onClick={signoutHandler}
-                  >
-                    Sign Out
-                  </Link>
-                </div>
+        <div style={{ color: "red" }} className="mb-3">
+          <Link style={{ color: "red" }} to="#signout" onClick={signoutHandler}>
+            Sign Out
+          </Link>
+        </div>
       </form>
     </div>
   );

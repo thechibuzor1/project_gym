@@ -7,7 +7,7 @@ function  Success() {
       <img className="img" src={img} alt="join" />
       <button className="success_btn">
         <span style={{ color: "white" }}>
-          <h1>THANK YOU FOR SHOPPING WITH EVAACTIVE</h1>
+          <h1>THANK YOU FOR SHOPPING WITH METAL VILLAGE.</h1>
           <h2>Your order will be delivered shortly.</h2>
         </span>
       </button>
